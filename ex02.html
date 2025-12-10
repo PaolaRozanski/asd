@@ -42,7 +42,7 @@ let mesasDisponiveis = 10;
         function validarNome(params) {
             {
                 let nome = prompt("Digite o nome da reserva:");
-                while (nome === "" || nome === null) {
+                while (nome === "" || !isNaN(nome)) {
                     nome = prompt("Nome inválido! Digite novamente:");
                 }
                 return nome;
